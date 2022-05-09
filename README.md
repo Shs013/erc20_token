@@ -84,9 +84,9 @@ $
 
 - See Etherscan
 
-<https://kovan.etherscan.io/address/<Address>>
-<https://kovan.etherscan.io/tx/<Transaction ID>>
-<https://kovan.etherscan.io/token/<Contract address>>
+<https://kovan.etherscan.io/address/*>
+<https://kovan.etherscan.io/tx/*>
+<https://kovan.etherscan.io/token/*>
 
 - For example, 
 
