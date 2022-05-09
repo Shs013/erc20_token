@@ -25,8 +25,9 @@ $ export PRIVATE_KEY=***
 
 ## Get ETH of kovan testnet from faucet
 
-- Install Metamask, then get an address
-- Faucet <https://ethdrop.dev>
+- Install Metamask <https://metamask.io/>
+- Then, get an account address
+- Get some ETH from faucent (more than 0.004 ETH is recommended) <https://ethdrop.dev>
 
 
 ## git clone
@@ -36,7 +37,12 @@ $ git clone https://github.com/fujihalab/erc20_token.git
 ```
 
 
-## Test using ganache
+## Edit contract 
+
+- Edit token name (default: FujihaLab Token) and symbol (default: FLT) in contracts/MyERC20Token.sol
+
+
+## Test minting tokens using ganache
 
 - Open 1st terminal, then run the following command
 
@@ -148,6 +154,8 @@ $
 
 ## Check token using Metamask
 
-- Import token --> Insert token import address --> Add custom token --> Import token
+- Import tokens --> Insert token import address --> Add custom token --> Import tokens
+
+<https://www.followchain.org/add-custom-token-metamask/>
 
 
