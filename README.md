@@ -1,5 +1,7 @@
 # erc20_token
 
+- This explains how to mint/send/show ERC20 tokens on kovan testnet
+
 - ERC20 Contract <https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol>
 
 
@@ -85,7 +87,9 @@ $
 - See Etherscan
 
 <https://kovan.etherscan.io/address/*>
+
 <https://kovan.etherscan.io/tx/*>
+
 <https://kovan.etherscan.io/token/*>
 
 - For example, 
