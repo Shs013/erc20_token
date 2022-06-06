@@ -35,7 +35,7 @@ $ npm install -g ganache
 - Insert web3 infura project id from infura <https://infura.io>
 
 ```
-$ export WEB3_INFURA_PROJECT_ID=***
+$ export WEB3_INFURA_PROJECT_ID='***'
 ```
 
 
