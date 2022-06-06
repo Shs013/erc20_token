@@ -9,6 +9,12 @@
 ```
 $ sudo apt install nodejs npm
 $ sudo apt install git
+
+$ sudo add-apt-repository ppa:ethereum/ethereum
+$ sudo add-apt-repository ppa:ethereum/ethereum-dev
+$ sudo apt update
+$ sudo apt install solchereum/ethereum-dev
+$ sudo apt update
 $ sudo apt install solc
 ```
 
