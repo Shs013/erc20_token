@@ -5,20 +5,37 @@
 - ERC20 Contract <https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol>
 
 
+## Install nodejs, npm, git
+```
+$ sudo apt install nodejs npm
+$ sudo apt install git
+$ sudo apt install solc
+```
+
+
 ## Install brownie and ganache
 
 ```
 $ pip3 install eth-brownie
+
 $ npm install -g ganache-cli
+or 
+$ npm install -g ganache
 ```
 
 
 ## Settings of ethereum kovan testnet
 
-- infura <https://infura.io>
+- Insert web3 infura project id from infura <https://infura.io>
 
 ```
 $ export WEB3_INFURA_PROJECT_ID=***
+```
+
+
+- Inset your private key from your metamask account
+
+```
 $ export PRIVATE_KEY=***
 ```
 
