@@ -7,42 +7,46 @@
 
 ## Install nodejs, npm, git
 ```
-$ sudo apt install nodejs npm
-$ sudo apt install git
+sudo apt install nodejs npm
+sudo apt install git
 
-$ sudo add-apt-repository ppa:ethereum/ethereum
-$ sudo add-apt-repository ppa:ethereum/ethereum-dev
-$ sudo apt update
-$ sudo apt install solchereum/ethereum-dev
-$ sudo apt update
-$ sudo apt install solc
+sudo add-apt-repository ppa:ethereum/ethereum
+sudo add-apt-repository ppa:ethereum/ethereum-dev
+sudo apt update
+sudo apt install solchereum/ethereum-dev
+sudo apt update
+sudo apt install solc
 ```
 
 
 ## Install brownie and ganache
 
 ```
-$ pip3 install eth-brownie
+sudo pip3 install eth-brownie
+```
 
-$ npm install -g ganache-cli
+```
+sudo npm install -g ganache-cli
+```
 or 
-$ npm install -g ganache
+```
+sudo npm install -g ganache
 ```
 
 
 ## Settings of ethereum kovan testnet
 
-- Insert web3 infura project id from infura <https://infura.io>
+- Insert web3 infura project ID from infura <https://infura.io> into ***
 
 ```
-$ export WEB3_INFURA_PROJECT_ID='***'
+export WEB3_INFURA_PROJECT_ID='***'
 ```
 
 
-- Inset your private key from your metamask account
+- Inset your private key from your metamask account into ***
 
 ```
-$ export PRIVATE_KEY=***
+export PRIVATE_KEY=***
 ```
 
 
@@ -56,7 +60,7 @@ $ export PRIVATE_KEY=***
 ## git clone
 
 ```
-$ git clone https://github.com/fujihalab/erc20_token.git
+git clone https://github.com/fujihalab/erc20_token.git
 ```
 
 
@@ -76,7 +80,7 @@ $ ganache-cli
 - Open 2nd terminal, then run the following command
 
 ```
-$ brownie run scripts/mint_token.py
+brownie run scripts/mint_token.py
 
 ```
 
@@ -86,8 +90,12 @@ $ brownie run scripts/mint_token.py
 - Then, run the following command
 
 ```
-$ brownie run scripts/mint_token.py --network kovan
+brownie run scripts/mint_token.py --network kovan
+```
 
+The standard output goes like this:
+
+```
 Brownie v1.18.1 - Python development framework for Ethereum
 
 Compiling contracts...
@@ -110,10 +118,9 @@ Transaction sent: 0x7423851904ac9a15b5a7a16fa316e89315b25965f48fb34f0f5d4e364489
   MyERC20Token.constructor confirmed   Block: 31509506   Gas used: 639091 (90.91%)
   MyERC20Token deployed at: 0x28E71A57454b0003632adc80279970925aDf96b2
 
-$
 ```
 
-- See Etherscan
+- See Etherscan (Insert corresponding information into *)
 
 <https://kovan.etherscan.io/address/*>
 
@@ -135,8 +142,12 @@ $
 - Then, run the following command
 
 ```
-$ brownie run scripts/send_token.py --network kovan
+brownie run scripts/send_token.py --network kovan
+```
 
+The standard output goes like this:
+
+```
 Brownie v1.18.1 - Python development framework for Ethereum
 
 Erc20TokenProject is the active project.
@@ -148,7 +159,6 @@ Transaction sent: 0x9bb39dbf10843b9c922c1b326a2487305ec9ce4ce0e67fc7dc0cc84078af
 
   MyERC20Token.transfer confirmed   Block: 31509687   Gas used: 51597 (90.91%)
 
-$
 ```
 
 
@@ -158,8 +168,12 @@ $
 - Then, run the following command
 
 ```
-$ brownie run scripts/show_token_status.py --network kovan
+brownie run scripts/show_token_status.py --network kovan
+```
 
+The standard output goes like this:
+
+```
 Brownie v1.18.1 - Python development framework for Ethereum
 
 Erc20TokenProject is the active project.
@@ -171,7 +185,6 @@ Token Decimals = 18
 Token Total Supply = 1000000000000000000000000
 Token Balance = 999900000000000000000000
 
-$
 ```
 
 
