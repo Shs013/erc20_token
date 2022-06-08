@@ -53,8 +53,9 @@ export PRIVATE_KEY=***
 ## Get ETH of kovan testnet from faucet
 
 - Install Metamask <https://metamask.io/>
+  To do this, you can follow the instruction from ![this](MetaMask_HowToCreateAccount.pdf). (Thanks to Hikaru!)
 - Then, get an account address
-- Get some ETH from faucent (more than 0.004 ETH is recommended) <https://ethdrop.dev>
+- Get some ETH from faucent (more than 0.004 ETH is recommended) <https://ethdrop.dev> or <https://gitter.im/kovan-testnet/faucet>
 
 
 ## git clone
