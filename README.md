@@ -1,6 +1,6 @@
 # erc20_token
 
-- This explains how to mint/send/show ERC20 tokens on kovan testnet
+- This explains how to mint/send/show ERC20 tokens on goerli testnet
 
 - ERC20 Contract <https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol>
 
@@ -34,7 +34,7 @@ sudo npm install -g ganache
 ```
 
 
-## Settings of ethereum kovan testnet
+## Settings of ethereum goerli testnet
 
 - Insert web3 infura project ID from infura <https://infura.io> into ***
 
@@ -50,12 +50,20 @@ export PRIVATE_KEY=***
 ```
 
 
-## Get ETH of kovan testnet from faucet
+## When you use bloxberg network, please run the following command
+
+```
+brownie networks add Bloxberg bloxberg host=https://core.bloxberg.org chainid=8995
+
+```
+
+
+## Get ETH of goerli testnet from faucet
 
 - Install Metamask <https://metamask.io/>
   To do this, you can follow the instruction from ![this](MetaMask_HowToCreateAccount.pdf). (Thanks to Hikaru!)
 - Then, get an account address
-- Get some ETH from faucent (more than 0.004 ETH is recommended) <https://ethdrop.dev> or <https://gitter.im/kovan-testnet/faucet>
+- Get some ETH from faucent (more than 0.004 ETH is recommended) <https://goerlifaucet.com/>
 
 
 ## git clone
@@ -65,7 +73,12 @@ git clone https://github.com/fujihalab/erc20_token.git
 ```
 
 
+
 ## Edit contract 
+
+```
+cd erc20_token
+```
 
 - Edit token name (default: FujihaLab Token) and symbol (default: FLT) in contracts/MyERC20Token.sol
 
@@ -91,7 +104,7 @@ brownie run scripts/mint_token.py
 - Then, run the following command
 
 ```
-brownie run scripts/mint_token.py --network kovan
+brownie run scripts/mint_token.py --network goerli
 ```
 
 The standard output goes like this:
@@ -123,17 +136,17 @@ Transaction sent: 0x7423851904ac9a15b5a7a16fa316e89315b25965f48fb34f0f5d4e364489
 
 - See Etherscan (Insert corresponding information into *)
 
-<https://kovan.etherscan.io/address/*>
+<https://goerli.etherscan.io/address/*>
 
-<https://kovan.etherscan.io/tx/*>
+<https://goerli.etherscan.io/tx/*>
 
-<https://kovan.etherscan.io/token/*>
+<https://goerli.etherscan.io/token/*>
 
 - For example, 
 
-<https://kovan.etherscan.io/address/0x3d5E61c1Bc6e882478ec3b6f814e7C95bEe7928a>
-<https://kovan.etherscan.io/tx/0x7423851904ac9a15b5a7a16fa316e89315b25965f48fb34f0f5d4e3644892039>
-<https://kovan.etherscan.io/token/0x28E71A57454b0003632adc80279970925aDf96b2>
+<https://goerli.etherscan.io/address/0x3d5E61c1Bc6e882478ec3b6f814e7C95bEe7928a>
+<https://goerli.etherscan.io/tx/0x7423851904ac9a15b5a7a16fa316e89315b25965f48fb34f0f5d4e3644892039>
+<https://goerli.etherscan.io/token/0x28E71A57454b0003632adc80279970925aDf96b2>
 
 
 ## Send token
@@ -143,7 +156,7 @@ Transaction sent: 0x7423851904ac9a15b5a7a16fa316e89315b25965f48fb34f0f5d4e364489
 - Then, run the following command
 
 ```
-brownie run scripts/send_token.py --network kovan
+brownie run scripts/send_token.py --network goerli
 ```
 
 The standard output goes like this:
@@ -169,7 +182,7 @@ Transaction sent: 0x9bb39dbf10843b9c922c1b326a2487305ec9ce4ce0e67fc7dc0cc84078af
 - Then, run the following command
 
 ```
-brownie run scripts/show_token_status.py --network kovan
+brownie run scripts/show_token_status.py --network goerli
 ```
 
 The standard output goes like this:

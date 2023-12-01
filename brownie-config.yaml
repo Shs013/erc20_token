@@ -7,6 +7,8 @@ compiler:
 dotenv: .env
 networks:
   default: development
-  kovan: active
+  goerli: active
+  sepolia: active
+  bloxberg: active
 wallets:
   from_key: ${PRIVATE_KEY}
